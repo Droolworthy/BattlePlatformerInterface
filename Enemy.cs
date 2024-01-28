@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     {
         _currentHealth -= damage;
 
+        EnemyHealthChanged?.Invoke(_currentHealth, _health);
+
         if (_currentHealth <= 0)
             Destroy(gameObject);
     }
