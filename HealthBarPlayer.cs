@@ -6,13 +6,13 @@ public class HealthBarPlayer : Bar
 
     private void OnEnable()
     {
-        _player.HealthChanged += OnValueChanged;
+        _player.PlayerHealthChanged += OnValueChanged;
 
         Wellness.value = 1;
     }
 
     private void OnDisable()
     {
-        _player.HealthChanged -= OnValueChanged;
+        _player.PlayerHealthChanged -= OnValueChanged;
     }
 }
