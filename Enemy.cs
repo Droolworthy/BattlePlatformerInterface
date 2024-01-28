@@ -4,7 +4,6 @@ using UnityEngine.Events;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private int _health;
-    [SerializeField] private Player _target;
 
     private int _currentHealth;
 
